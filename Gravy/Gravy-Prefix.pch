@@ -5,3 +5,16 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
+
+#ifdef DEBUG
+
+#define DLOG(fmt, ...) NSLog(@"[%@ %@] %@", \
+NSStringFromClass([self class]), \
+NSStringFromSelector(_cmd), \
+[NSString stringWithFormat:fmt, ## __VA_ARGS__]);
+
+#else
+
+#define DLOG(...)
+
+#endif
