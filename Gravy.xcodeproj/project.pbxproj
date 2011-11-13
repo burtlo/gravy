@@ -16,7 +16,28 @@
 		E281AB001470667300F35708 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAFF1470667300F35708 /* SenTestingKit.framework */; };
 		E281AB011470667300F35708 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAE11470667300F35708 /* Cocoa.framework */; };
 		E281AB091470667300F35708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E281AB071470667300F35708 /* InfoPlist.strings */; };
-		E281AB0C1470667300F35708 /* GravyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB0B1470667300F35708 /* GravyTests.m */; };
+		E281AB2F147067F600F35708 /* Achievement.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB2C147067F600F35708 /* Achievement.m */; };
+		E281AB30147067F600F35708 /* AchievementRequirement.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB2E147067F600F35708 /* AchievementRequirement.m */; };
+		E281AB33147067FC00F35708 /* Achievements.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB32147067FC00F35708 /* Achievements.m */; };
+		E281AB361470680200F35708 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB351470680200F35708 /* AMAppDelegate.m */; };
+		E281AB391470680800F35708 /* AMDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB381470680800F35708 /* AMDocumentController.m */; };
+		E281AB3E1470682500F35708 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB3B1470682500F35708 /* GameObject.m */; };
+		E281AB3F1470682500F35708 /* GameObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB3D1470682500F35708 /* GameObjects.m */; };
+		E281AB421470682D00F35708 /* NSString+ActiveSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB411470682D00F35708 /* NSString+ActiveSupport.m */; };
+		E281AB451470683400F35708 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB441470683400F35708 /* Pet.m */; };
+		E281AB491470683F00F35708 /* Pets.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AB461470683F00F35708 /* Pets.xib */; };
+		E281AB4A1470683F00F35708 /* PetsDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB481470683F00F35708 /* PetsDocumentController.m */; };
+		E281AB501470689000F35708 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB4F1470689000F35708 /* CSVParser.m */; };
+		E281AB541470689B00F35708 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AB511470689B00F35708 /* Document.xib */; };
+		E281AB551470689B00F35708 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB531470689B00F35708 /* DocumentController.m */; };
+		E281AB5B1470690300F35708 /* Achievements.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB571470690300F35708 /* Achievements.csv */; };
+		E281AB5C1470690300F35708 /* AchievementsRequirements.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB581470690300F35708 /* AchievementsRequirements.csv */; };
+		E281AB5D1470690300F35708 /* GameObjectTypes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB591470690300F35708 /* GameObjectTypes.csv */; };
+		E281AB5E1470690300F35708 /* Pets.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB5A1470690300F35708 /* Pets.csv */; };
+		E281AB641470691A00F35708 /* AchievementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB601470691A00F35708 /* AchievementsTests.m */; };
+		E281AB651470691A00F35708 /* CSVParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB611470691A00F35708 /* CSVParserTests.m */; };
+		E281AB661470691A00F35708 /* GameObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB621470691A00F35708 /* GameObjectsTests.m */; };
+		E281AB671470691A00F35708 /* NSString+ActiveSupportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB631470691A00F35708 /* NSString+ActiveSupportTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +56,52 @@
 		E281AAE41470667300F35708 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E281AAE51470667300F35708 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E281AAE61470667300F35708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E281AAE91470667300F35708 /* Gravy-Info.plist */ = {isa = PBXFileReference; path = "Gravy-Info.plist"; sourceTree = "<group>"; };
+		E281AAE91470667300F35708 /* Gravy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gravy-Info.plist"; sourceTree = "<group>"; };
 		E281AAEB1470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E281AAED1470667300F35708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E281AAEF1470667300F35708 /* Gravy-Prefix.pch */ = {isa = PBXFileReference; path = "Gravy-Prefix.pch"; sourceTree = "<group>"; };
+		E281AAEF1470667300F35708 /* Gravy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gravy-Prefix.pch"; sourceTree = "<group>"; };
 		E281AAF11470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		E281AAF31470667300F35708 /* GVAppDelegate.h */ = {isa = PBXFileReference; path = GVAppDelegate.h; sourceTree = "<group>"; };
+		E281AAF31470667300F35708 /* GVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVAppDelegate.h; sourceTree = "<group>"; };
 		E281AAF41470667300F35708 /* GVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVAppDelegate.m; sourceTree = "<group>"; };
 		E281AAF71470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E281AAFE1470667300F35708 /* GravyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GravyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E281AAFF1470667300F35708 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E281AB061470667300F35708 /* GravyTests-Info.plist */ = {isa = PBXFileReference; path = "GravyTests-Info.plist"; sourceTree = "<group>"; };
+		E281AB061470667300F35708 /* GravyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GravyTests-Info.plist"; sourceTree = "<group>"; };
 		E281AB081470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E281AB0A1470667300F35708 /* GravyTests.h */ = {isa = PBXFileReference; path = GravyTests.h; sourceTree = "<group>"; };
-		E281AB0B1470667300F35708 /* GravyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravyTests.m; sourceTree = "<group>"; };
+		E281AB2B147067F600F35708 /* Achievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievement.h; sourceTree = "<group>"; };
+		E281AB2C147067F600F35708 /* Achievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievement.m; sourceTree = "<group>"; };
+		E281AB2D147067F600F35708 /* AchievementRequirement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementRequirement.h; sourceTree = "<group>"; };
+		E281AB2E147067F600F35708 /* AchievementRequirement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementRequirement.m; sourceTree = "<group>"; };
+		E281AB31147067FC00F35708 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
+		E281AB32147067FC00F35708 /* Achievements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievements.m; sourceTree = "<group>"; };
+		E281AB341470680200F35708 /* AMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		E281AB351470680200F35708 /* AMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
+		E281AB371470680800F35708 /* AMDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentController.h; sourceTree = "<group>"; };
+		E281AB381470680800F35708 /* AMDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentController.m; sourceTree = "<group>"; };
+		E281AB3A1470682500F35708 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		E281AB3B1470682500F35708 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		E281AB3C1470682500F35708 /* GameObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjects.h; sourceTree = "<group>"; };
+		E281AB3D1470682500F35708 /* GameObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjects.m; sourceTree = "<group>"; };
+		E281AB401470682D00F35708 /* NSString+ActiveSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ActiveSupport.h"; sourceTree = "<group>"; };
+		E281AB411470682D00F35708 /* NSString+ActiveSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ActiveSupport.m"; sourceTree = "<group>"; };
+		E281AB431470683400F35708 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		E281AB441470683400F35708 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		E281AB461470683F00F35708 /* Pets.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Pets.xib; sourceTree = "<group>"; };
+		E281AB471470683F00F35708 /* PetsDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetsDocumentController.h; sourceTree = "<group>"; };
+		E281AB481470683F00F35708 /* PetsDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetsDocumentController.m; sourceTree = "<group>"; };
+		E281AB4E1470689000F35708 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
+		E281AB4F1470689000F35708 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		E281AB511470689B00F35708 /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
+		E281AB521470689B00F35708 /* DocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		E281AB531470689B00F35708 /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
+		E281AB571470690300F35708 /* Achievements.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Achievements.csv; sourceTree = "<group>"; };
+		E281AB581470690300F35708 /* AchievementsRequirements.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AchievementsRequirements.csv; sourceTree = "<group>"; };
+		E281AB591470690300F35708 /* GameObjectTypes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameObjectTypes.csv; sourceTree = "<group>"; };
+		E281AB5A1470690300F35708 /* Pets.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pets.csv; sourceTree = "<group>"; };
+		E281AB601470691A00F35708 /* AchievementsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsTests.m; sourceTree = "<group>"; };
+		E281AB611470691A00F35708 /* CSVParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParserTests.m; sourceTree = "<group>"; };
+		E281AB621470691A00F35708 /* GameObjectsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectsTests.m; sourceTree = "<group>"; };
+		E281AB631470691A00F35708 /* NSString+ActiveSupportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ActiveSupportTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +169,12 @@
 			children = (
 				E281AAF31470667300F35708 /* GVAppDelegate.h */,
 				E281AAF41470667300F35708 /* GVAppDelegate.m */,
-				E281AAF61470667300F35708 /* MainMenu.xib */,
+				E281AB341470680200F35708 /* AMAppDelegate.h */,
+				E281AB351470680200F35708 /* AMAppDelegate.m */,
+				E281AB181470675C00F35708 /* Views */,
+				E281AB171470674D00F35708 /* Utilities */,
+				E281AB161470674900F35708 /* Adapters */,
+				E281AB151470673F00F35708 /* Models */,
 				E281AAE81470667300F35708 /* Supporting Files */,
 			);
 			path = Gravy;
@@ -137,8 +195,10 @@
 		E281AB041470667300F35708 /* GravyTests */ = {
 			isa = PBXGroup;
 			children = (
-				E281AB0A1470667300F35708 /* GravyTests.h */,
-				E281AB0B1470667300F35708 /* GravyTests.m */,
+				E281AB691470693400F35708 /* Adapters */,
+				E281AB6A1470693800F35708 /* Models */,
+				E281AB6B1470693B00F35708 /* Utilities */,
+				E281AB5F1470690600F35708 /* Fixtures */,
 				E281AB051470667300F35708 /* Supporting Files */,
 			);
 			path = GravyTests;
@@ -151,6 +211,111 @@
 				E281AB071470667300F35708 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E281AB151470673F00F35708 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB2B147067F600F35708 /* Achievement.h */,
+				E281AB2C147067F600F35708 /* Achievement.m */,
+				E281AB31147067FC00F35708 /* Achievements.h */,
+				E281AB32147067FC00F35708 /* Achievements.m */,
+				E281AB2D147067F600F35708 /* AchievementRequirement.h */,
+				E281AB2E147067F600F35708 /* AchievementRequirement.m */,
+				E281AB3A1470682500F35708 /* GameObject.h */,
+				E281AB3B1470682500F35708 /* GameObject.m */,
+				E281AB3C1470682500F35708 /* GameObjects.h */,
+				E281AB3D1470682500F35708 /* GameObjects.m */,
+				E281AB431470683400F35708 /* Pet.h */,
+				E281AB441470683400F35708 /* Pet.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E281AB161470674900F35708 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB4E1470689000F35708 /* CSVParser.h */,
+				E281AB4F1470689000F35708 /* CSVParser.m */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		E281AB171470674D00F35708 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB401470682D00F35708 /* NSString+ActiveSupport.h */,
+				E281AB411470682D00F35708 /* NSString+ActiveSupport.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E281AB181470675C00F35708 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB371470680800F35708 /* AMDocumentController.h */,
+				E281AB381470680800F35708 /* AMDocumentController.m */,
+				E281AAF61470667300F35708 /* MainMenu.xib */,
+				E281AB561470689E00F35708 /* Achievements */,
+				E281AB4D1470684F00F35708 /* Pets */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E281AB4D1470684F00F35708 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB471470683F00F35708 /* PetsDocumentController.h */,
+				E281AB481470683F00F35708 /* PetsDocumentController.m */,
+				E281AB461470683F00F35708 /* Pets.xib */,
+			);
+			name = Pets;
+			sourceTree = "<group>";
+		};
+		E281AB561470689E00F35708 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB511470689B00F35708 /* Document.xib */,
+				E281AB521470689B00F35708 /* DocumentController.h */,
+				E281AB531470689B00F35708 /* DocumentController.m */,
+			);
+			name = Achievements;
+			sourceTree = "<group>";
+		};
+		E281AB5F1470690600F35708 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB571470690300F35708 /* Achievements.csv */,
+				E281AB581470690300F35708 /* AchievementsRequirements.csv */,
+				E281AB591470690300F35708 /* GameObjectTypes.csv */,
+				E281AB5A1470690300F35708 /* Pets.csv */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		E281AB691470693400F35708 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB611470691A00F35708 /* CSVParserTests.m */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		E281AB6A1470693800F35708 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB601470691A00F35708 /* AchievementsTests.m */,
+				E281AB621470691A00F35708 /* GameObjectsTests.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E281AB6B1470693B00F35708 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB631470691A00F35708 /* NSString+ActiveSupportTests.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +391,8 @@
 				E281AAEC1470667300F35708 /* InfoPlist.strings in Resources */,
 				E281AAF21470667300F35708 /* Credits.rtf in Resources */,
 				E281AAF81470667300F35708 /* MainMenu.xib in Resources */,
+				E281AB491470683F00F35708 /* Pets.xib in Resources */,
+				E281AB541470689B00F35708 /* Document.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +401,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E281AB091470667300F35708 /* InfoPlist.strings in Resources */,
+				E281AB5B1470690300F35708 /* Achievements.csv in Resources */,
+				E281AB5C1470690300F35708 /* AchievementsRequirements.csv in Resources */,
+				E281AB5D1470690300F35708 /* GameObjectTypes.csv in Resources */,
+				E281AB5E1470690300F35708 /* Pets.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +433,18 @@
 			files = (
 				E281AAEE1470667300F35708 /* main.m in Sources */,
 				E281AAF51470667300F35708 /* GVAppDelegate.m in Sources */,
+				E281AB2F147067F600F35708 /* Achievement.m in Sources */,
+				E281AB30147067F600F35708 /* AchievementRequirement.m in Sources */,
+				E281AB33147067FC00F35708 /* Achievements.m in Sources */,
+				E281AB361470680200F35708 /* AMAppDelegate.m in Sources */,
+				E281AB391470680800F35708 /* AMDocumentController.m in Sources */,
+				E281AB3E1470682500F35708 /* GameObject.m in Sources */,
+				E281AB3F1470682500F35708 /* GameObjects.m in Sources */,
+				E281AB421470682D00F35708 /* NSString+ActiveSupport.m in Sources */,
+				E281AB451470683400F35708 /* Pet.m in Sources */,
+				E281AB4A1470683F00F35708 /* PetsDocumentController.m in Sources */,
+				E281AB501470689000F35708 /* CSVParser.m in Sources */,
+				E281AB551470689B00F35708 /* DocumentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E281AB0C1470667300F35708 /* GravyTests.m in Sources */,
+				E281AB641470691A00F35708 /* AchievementsTests.m in Sources */,
+				E281AB651470691A00F35708 /* CSVParserTests.m in Sources */,
+				E281AB661470691A00F35708 /* GameObjectsTests.m in Sources */,
+				E281AB671470691A00F35708 /* NSString+ActiveSupportTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
