@@ -39,18 +39,14 @@
         
         NSURL *baseFolder = [[openPanel URLs] objectAtIndex:0];
         
-        DocumentController *documentController = [[DocumentController alloc] initWithWindowNibName:@"Document" 
-                                                                              withAchievementsData:[self achievementsFromBaseFolder:baseFolder]];
-        
-        [documentController loadWindow];
+//        DocumentController *documentController = [[DocumentController alloc] initWithWindowNibName:@"Document" 
+//                                                                              withAchievementsData:[self achievementsFromBaseFolder:baseFolder]];
+//        
+//        [documentController loadWindow];
         
         PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithWindowNibName:@"Pets" withGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
         
-        
         [petsDocController loadWindow];
-        
-//        GVAppDelegate *appDelegate = (AMAppDelegate *)[[NSApplication sharedApplication] delegate];
-//        [appDelegate setDocumentController:documentController];
 
     }
     

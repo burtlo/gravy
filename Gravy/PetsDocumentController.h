@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "GameObjects.h"
-
+#import "cocos2d.h"
 
 @interface PetsDocumentController : NSWindowController
 
@@ -17,5 +17,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic,assign) IBOutlet GameObjects *gameObjects;
 @property (nonatomic,assign) IBOutlet NSMutableArray *pets;
+
+@property (nonatomic,assign) IBOutlet MacGLView *animationView;
 
 @end
