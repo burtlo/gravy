@@ -19,7 +19,6 @@
 		E281AB2F147067F600F35708 /* Achievement.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB2C147067F600F35708 /* Achievement.m */; };
 		E281AB30147067F600F35708 /* AchievementRequirement.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB2E147067F600F35708 /* AchievementRequirement.m */; };
 		E281AB33147067FC00F35708 /* Achievements.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB32147067FC00F35708 /* Achievements.m */; };
-		E281AB361470680200F35708 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB351470680200F35708 /* AMAppDelegate.m */; };
 		E281AB391470680800F35708 /* AMDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB381470680800F35708 /* AMDocumentController.m */; };
 		E281AB3E1470682500F35708 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB3B1470682500F35708 /* GameObject.m */; };
 		E281AB3F1470682500F35708 /* GameObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB3D1470682500F35708 /* GameObjects.m */; };
@@ -74,8 +73,6 @@
 		E281AB2E147067F600F35708 /* AchievementRequirement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementRequirement.m; sourceTree = "<group>"; };
 		E281AB31147067FC00F35708 /* Achievements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievements.h; sourceTree = "<group>"; };
 		E281AB32147067FC00F35708 /* Achievements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Achievements.m; sourceTree = "<group>"; };
-		E281AB341470680200F35708 /* AMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
-		E281AB351470680200F35708 /* AMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
 		E281AB371470680800F35708 /* AMDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentController.h; sourceTree = "<group>"; };
 		E281AB381470680800F35708 /* AMDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentController.m; sourceTree = "<group>"; };
 		E281AB3A1470682500F35708 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
@@ -169,12 +166,10 @@
 			children = (
 				E281AAF31470667300F35708 /* GVAppDelegate.h */,
 				E281AAF41470667300F35708 /* GVAppDelegate.m */,
-				E281AB341470680200F35708 /* AMAppDelegate.h */,
-				E281AB351470680200F35708 /* AMAppDelegate.m */,
-				E281AB181470675C00F35708 /* Views */,
-				E281AB171470674D00F35708 /* Utilities */,
 				E281AB161470674900F35708 /* Adapters */,
 				E281AB151470673F00F35708 /* Models */,
+				E281AB171470674D00F35708 /* Utilities */,
+				E281AB181470675C00F35708 /* Views */,
 				E281AAE81470667300F35708 /* Supporting Files */,
 			);
 			path = Gravy;
@@ -436,7 +431,6 @@
 				E281AB2F147067F600F35708 /* Achievement.m in Sources */,
 				E281AB30147067F600F35708 /* AchievementRequirement.m in Sources */,
 				E281AB33147067FC00F35708 /* Achievements.m in Sources */,
-				E281AB361470680200F35708 /* AMAppDelegate.m in Sources */,
 				E281AB391470680800F35708 /* AMDocumentController.m in Sources */,
 				E281AB3E1470682500F35708 /* GameObject.m in Sources */,
 				E281AB3F1470682500F35708 /* GameObjects.m in Sources */,

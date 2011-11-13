@@ -8,7 +8,7 @@
 
 #import "AMDocumentController.h"
 #import "Achievements.h"
-#import "AMAppDelegate.h"
+#import "GVAppDelegate.h"
 #import "DocumentController.h"
 #import "GameObjects.h"
 #import "PetsDocumentController.h"
@@ -49,8 +49,8 @@
         
         [petsDocController loadWindow];
         
-        AMAppDelegate *appDelegate = (AMAppDelegate *)[[NSApplication sharedApplication] delegate];
-        [appDelegate setDocumentController:documentController];
+//        GVAppDelegate *appDelegate = (AMAppDelegate *)[[NSApplication sharedApplication] delegate];
+//        [appDelegate setDocumentController:documentController];
 
     }
     
