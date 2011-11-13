@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Gravy' target in the 'Gravy' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E281AAE21470667300F35708 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAE11470667300F35708 /* Cocoa.framework */; };
+		E281AAEC1470667300F35708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E281AAEA1470667300F35708 /* InfoPlist.strings */; };
+		E281AAEE1470667300F35708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AAED1470667300F35708 /* main.m */; };
+		E281AAF21470667300F35708 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E281AAF01470667300F35708 /* Credits.rtf */; };
+		E281AAF51470667300F35708 /* GVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AAF41470667300F35708 /* GVAppDelegate.m */; };
+		E281AAF81470667300F35708 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AAF61470667300F35708 /* MainMenu.xib */; };
+		E281AB001470667300F35708 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAFF1470667300F35708 /* SenTestingKit.framework */; };
+		E281AB011470667300F35708 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAE11470667300F35708 /* Cocoa.framework */; };
+		E281AB091470667300F35708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E281AB071470667300F35708 /* InfoPlist.strings */; };
+		E281AB0C1470667300F35708 /* GravyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB0B1470667300F35708 /* GravyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E281AB021470667300F35708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E281AAD41470667300F35708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E281AADC1470667300F35708;
+			remoteInfo = Gravy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E281AADD1470667300F35708 /* Gravy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gravy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E281AAE11470667300F35708 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E281AAE41470667300F35708 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E281AAE51470667300F35708 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E281AAE61470667300F35708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E281AAE91470667300F35708 /* Gravy-Info.plist */ = {isa = PBXFileReference; path = "Gravy-Info.plist"; sourceTree = "<group>"; };
+		E281AAEB1470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E281AAED1470667300F35708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E281AAEF1470667300F35708 /* Gravy-Prefix.pch */ = {isa = PBXFileReference; path = "Gravy-Prefix.pch"; sourceTree = "<group>"; };
+		E281AAF11470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E281AAF31470667300F35708 /* GVAppDelegate.h */ = {isa = PBXFileReference; path = GVAppDelegate.h; sourceTree = "<group>"; };
+		E281AAF41470667300F35708 /* GVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVAppDelegate.m; sourceTree = "<group>"; };
+		E281AAF71470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E281AAFE1470667300F35708 /* GravyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GravyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E281AAFF1470667300F35708 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E281AB061470667300F35708 /* GravyTests-Info.plist */ = {isa = PBXFileReference; path = "GravyTests-Info.plist"; sourceTree = "<group>"; };
+		E281AB081470667300F35708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E281AB0A1470667300F35708 /* GravyTests.h */ = {isa = PBXFileReference; path = GravyTests.h; sourceTree = "<group>"; };
+		E281AB0B1470667300F35708 /* GravyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E281AADA1470667300F35708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AAE21470667300F35708 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E281AAFA1470667300F35708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AB001470667300F35708 /* SenTestingKit.framework in Frameworks */,
+				E281AB011470667300F35708 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E281AAD21470667300F35708 = {
+			isa = PBXGroup;
+			children = (
+				E281AAE71470667300F35708 /* Gravy */,
+				E281AB041470667300F35708 /* GravyTests */,
+				E281AAE01470667300F35708 /* Frameworks */,
+				E281AADE1470667300F35708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E281AADE1470667300F35708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E281AADD1470667300F35708 /* Gravy.app */,
+				E281AAFE1470667300F35708 /* GravyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E281AAE01470667300F35708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E281AAE11470667300F35708 /* Cocoa.framework */,
+				E281AAFF1470667300F35708 /* SenTestingKit.framework */,
+				E281AAE31470667300F35708 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E281AAE31470667300F35708 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E281AAE41470667300F35708 /* AppKit.framework */,
+				E281AAE51470667300F35708 /* CoreData.framework */,
+				E281AAE61470667300F35708 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E281AAE71470667300F35708 /* Gravy */ = {
+			isa = PBXGroup;
+			children = (
+				E281AAF31470667300F35708 /* GVAppDelegate.h */,
+				E281AAF41470667300F35708 /* GVAppDelegate.m */,
+				E281AAF61470667300F35708 /* MainMenu.xib */,
+				E281AAE81470667300F35708 /* Supporting Files */,
+			);
+			path = Gravy;
+			sourceTree = "<group>";
+		};
+		E281AAE81470667300F35708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E281AAE91470667300F35708 /* Gravy-Info.plist */,
+				E281AAEA1470667300F35708 /* InfoPlist.strings */,
+				E281AAED1470667300F35708 /* main.m */,
+				E281AAEF1470667300F35708 /* Gravy-Prefix.pch */,
+				E281AAF01470667300F35708 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E281AB041470667300F35708 /* GravyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB0A1470667300F35708 /* GravyTests.h */,
+				E281AB0B1470667300F35708 /* GravyTests.m */,
+				E281AB051470667300F35708 /* Supporting Files */,
+			);
+			path = GravyTests;
+			sourceTree = "<group>";
+		};
+		E281AB051470667300F35708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E281AB061470667300F35708 /* GravyTests-Info.plist */,
+				E281AB071470667300F35708 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E281AADC1470667300F35708 /* Gravy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E281AB0F1470667300F35708 /* Build configuration list for PBXNativeTarget "Gravy" */;
+			buildPhases = (
+				E281AAD91470667300F35708 /* Sources */,
+				E281AADA1470667300F35708 /* Frameworks */,
+				E281AADB1470667300F35708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gravy;
+			productName = Gravy;
+			productReference = E281AADD1470667300F35708 /* Gravy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E281AAFD1470667300F35708 /* GravyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E281AB121470667300F35708 /* Build configuration list for PBXNativeTarget "GravyTests" */;
+			buildPhases = (
+				E281AAF91470667300F35708 /* Sources */,
+				E281AAFA1470667300F35708 /* Frameworks */,
+				E281AAFB1470667300F35708 /* Resources */,
+				E281AAFC1470667300F35708 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E281AB031470667300F35708 /* PBXTargetDependency */,
+			);
+			name = GravyTests;
+			productName = GravyTests;
+			productReference = E281AAFE1470667300F35708 /* GravyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E281AAD41470667300F35708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E281AAD71470667300F35708 /* Build configuration list for PBXProject "Gravy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E281AAD21470667300F35708;
+			productRefGroup = E281AADE1470667300F35708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E281AADC1470667300F35708 /* Gravy */,
+				E281AAFD1470667300F35708 /* GravyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E281AADB1470667300F35708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AAEC1470667300F35708 /* InfoPlist.strings in Resources */,
+				E281AAF21470667300F35708 /* Credits.rtf in Resources */,
+				E281AAF81470667300F35708 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E281AAFB1470667300F35708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AB091470667300F35708 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E281AAFC1470667300F35708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E281AAD91470667300F35708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AAEE1470667300F35708 /* main.m in Sources */,
+				E281AAF51470667300F35708 /* GVAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E281AAF91470667300F35708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281AB0C1470667300F35708 /* GravyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E281AB031470667300F35708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E281AADC1470667300F35708 /* Gravy */;
+			targetProxy = E281AB021470667300F35708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E281AAEA1470667300F35708 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E281AAEB1470667300F35708 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E281AAF01470667300F35708 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E281AAF11470667300F35708 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E281AAF61470667300F35708 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E281AAF71470667300F35708 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E281AB071470667300F35708 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E281AB081470667300F35708 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E281AB0D1470667300F35708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E281AB0E1470667300F35708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E281AB101470667300F35708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
+				INFOPLIST_FILE = "Gravy/Gravy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E281AB111470667300F35708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
+				INFOPLIST_FILE = "Gravy/Gravy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E281AB131470667300F35708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gravy.app/Contents/MacOS/Gravy";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
+				INFOPLIST_FILE = "GravyTests/GravyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E281AB141470667300F35708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gravy.app/Contents/MacOS/Gravy";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
+				INFOPLIST_FILE = "GravyTests/GravyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E281AAD71470667300F35708 /* Build configuration list for PBXProject "Gravy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E281AB0D1470667300F35708 /* Debug */,
+				E281AB0E1470667300F35708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E281AB0F1470667300F35708 /* Build configuration list for PBXNativeTarget "Gravy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E281AB101470667300F35708 /* Debug */,
+				E281AB111470667300F35708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E281AB121470667300F35708 /* Build configuration list for PBXNativeTarget "GravyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E281AB131470667300F35708 /* Debug */,
+				E281AB141470667300F35708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E281AAD41470667300F35708 /* Project object */;
+}
