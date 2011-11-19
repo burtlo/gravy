@@ -19,6 +19,8 @@
 @property (nonatomic,assign) IBOutlet GameObjects *gameObjects;
 @property (nonatomic,retain) IBOutlet MacGLView *animationView;
 
+@property (assign) IBOutlet NSCollectionView *collectionView;
+@property (assign) IBOutlet NSArrayController *arrayController;
 @property (nonatomic,assign) IBOutlet NSMutableArray *pets;
 
 @property (nonatomic,assign) NSURL *baseResourcesURL;

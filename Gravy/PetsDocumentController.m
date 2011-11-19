@@ -22,6 +22,8 @@
 @end
 
 @implementation PetsDocumentController
+@synthesize collectionView;
+@synthesize arrayController;
 
 @synthesize window, animationView;
 
@@ -36,6 +38,9 @@
         [self setGameObjects:aGameObjects];
         [self setBaseResourcesURL:resourcesURL];
         
+        [self addObserver:self 
+               forKeyPath:@"arrayController.selectionIndex" options:NSKeyValueChangeSetting 
+                  context:nil];
         
         [NSBundle loadNibNamed:@"Pets" owner:self];
         
@@ -73,5 +78,17 @@
     
     [director runWithScene:[PetsAnimationLayer scene]];
 }
+
+#pragma mark - Observation
+
+- (void)observeValueForKeyPath:(NSString *)keyPath 
+                      ofObject:(id)valueObject
+                        change:(NSDictionary *)change 
+                       context:(void *)context {
+    
+    NSLog(@"Array Controller changed index to %@",[arrayController selectedObjects]);
+
+}
+
 
 @end
