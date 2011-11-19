@@ -44,11 +44,8 @@
         //NSLog(@"Looking at %@",file);
     
         if ( [[file absoluteString] hasSuffix:[[pet room] iconFilename]] ) {
-            NSLog(@"Found image at %@",[file absoluteString]);            
-            NSImage *image = [[[NSImage alloc] initWithContentsOfFile:[file absoluteString]] autorelease];
-
-            return image;
-            
+            NSLog(@"Found image at %@",[file absoluteString]);
+            return [[[NSImage alloc] initWithContentsOfURL:file] autorelease];
         }
     }
     
