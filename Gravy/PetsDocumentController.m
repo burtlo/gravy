@@ -10,6 +10,9 @@
 #import "cocos2d.h"
 #import "PetsAnimationLayer.h"
 
+#define kPetAnimationView 2
+
+
 @interface PetsDocumentController ()
 
 - (void)prepareAnimationView;
@@ -17,23 +20,28 @@
 @end
 
 @implementation PetsDocumentController
-@synthesize animationView;
 
-@synthesize window;
+@synthesize window, animationView;
+
 @synthesize gameObjects, pets;
 
-- (id)initWithWindowNibName:(NSString *)windowNibName withGameObjects:(GameObjects *)aGameObjects;
-{
-    self = [super initWithWindowNibName:windowNibName];
+- (id)initWithGameObjects:(GameObjects *)aGameObjects {
+    
+    self = [super init];
     
     if ( self ) {
-        [self setWindow:window];
+    
         [self setGameObjects:aGameObjects];
         
+        [NSBundle loadNibNamed:@"Pets" owner:self];
+        
         [self prepareAnimationView];
+     
+        
     }
     
     return self;
+    
 }
 
 - (NSMutableArray *)pets {
@@ -42,18 +50,16 @@
 
 - (void)prepareAnimationView {
     CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
-	
-	[director setDisplayFPS:YES];
-	
-	[director setOpenGLView:[self animationView]];
+    [director setDisplayFPS:YES];
+
+    [director setOpenGLView:[self animationView]];
     
 	// EXPERIMENTAL stuff.
 	// 'Effects' don't work correctly when autoscale is turned on.
 	// Use kCCDirectorResize_NoScale if you don't want auto-scaling.
-	[director setResizeMode:kCCDirectorResize_NoScale];
-    //[director setResizeMode:kCCDirectorResize_AutoScale];
+    [director setResizeMode:kCCDirectorResize_AutoScale];
     
-	[director runWithScene:[PetsAnimationLayer scene]];
+    [director runWithScene:[PetsAnimationLayer scene]];
 }
 
 @end

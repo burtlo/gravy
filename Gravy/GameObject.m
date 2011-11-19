@@ -15,6 +15,7 @@
 @synthesize dateOfStartOffer, dateOfEndOffer, percentOffBuildCost, percentOffRushCost, dateOfStartSale, dateOfEndSale;
 
 @synthesize category;
+@synthesize isMysteryLTO;
 
 @synthesize levels;
 

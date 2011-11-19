@@ -33,6 +33,7 @@
 @property (nonatomic,retain,readwrite) NSString *dateOfEndSale;
 
 @property (nonatomic,retain,readwrite) NSString *category;
+@property (nonatomic,retain,readwrite) NSString *isMysteryLTO;
 
 @property (nonatomic,retain,readwrite) NSString *level0Filename;
 @property (nonatomic,retain,readwrite) NSString *level0PNGColorSpace;

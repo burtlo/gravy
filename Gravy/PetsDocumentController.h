@@ -10,14 +10,15 @@
 #import "GameObjects.h"
 #import "cocos2d.h"
 
-@interface PetsDocumentController : NSWindowController
+@interface PetsDocumentController : NSObject
 
-- (id)initWithWindowNibName:(NSString *)windowNibName withGameObjects:(GameObjects *)aGameObjects;
+- (id)initWithGameObjects:(GameObjects *)aGameObjects;
+//- (id)initWithWindowNibName:(NSString *)windowNibName withGameObjects:(GameObjects *)aGameObjects;
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic,assign) IBOutlet NSWindow *window;
 @property (nonatomic,assign) IBOutlet GameObjects *gameObjects;
 @property (nonatomic,assign) IBOutlet NSMutableArray *pets;
 
-@property (nonatomic,assign) IBOutlet MacGLView *animationView;
+@property (nonatomic,retain) IBOutlet MacGLView *animationView;
 
 @end

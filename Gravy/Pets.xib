@@ -171,18 +171,17 @@
 									<int key="NSvFlags">256</int>
 									<object class="NSMutableArray" key="NSSubviews">
 										<bool key="EncodedWithXMLCoder">YES</bool>
-										<object class="NSOpenGLView" id="279110831">
+										<object class="NSOpenGLView" id="84989064">
 											<reference key="NSNextResponder" ref="157080717"/>
-											<int key="NSvFlags">1292</int>
+											<int key="NSvFlags">1298</int>
 											<object class="NSPSMatrix" key="NSDrawMatrix"/>
-											<string key="NSFrame">{{0, 164}, {580, 416}}</string>
+											<string key="NSFrame">{{0, 363}, {420, 217}}</string>
 											<reference key="NSSuperview" ref="157080717"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<object class="NSOpenGLPixelFormat" key="NSPixelFormat">
 												<object class="NSMutableData" key="NSPixelAttributes">
-													<bytes key="NS.bytes">AAAAYAAAAAA</bytes>
+													<bytes key="NS.bytes">AAAABQAAAGAAAAAIAAAADwAAAAsAAAAIAAAAAA</bytes>
 												</object>
 											</object>
 										</object>
@@ -190,7 +189,7 @@
 									<string key="NSFrame">{{448, 0}, {420, 580}}</string>
 									<reference key="NSSuperview" ref="764218945"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="279110831"/>
+									<reference key="NSNextKeyView" ref="84989064"/>
 									<string key="NSReuseIdentifierKey">_NS:1167</string>
 									<string key="NSClassName">NSView</string>
 								</object>
@@ -267,7 +266,6 @@
 						<string key="NSFrame">{{17, 0}, {247, 43}}</string>
 						<reference key="NSSuperview" ref="302670177"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:360</string>
 						<string key="NSAntiCompressionPriority">{250, 750}</string>
 						<bool key="NSEnabled">YES</bool>
@@ -296,9 +294,17 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">animationView</string>
 						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="279110831"/>
+						<reference key="destination" ref="84989064"/>
 					</object>
-					<int key="connectionID">39</int>
+					<int key="connectionID">45</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">window</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="1005"/>
+					</object>
+					<int key="connectionID">48</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -473,15 +479,6 @@
 						<reference key="parent" ref="1006"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">30</int>
-						<reference key="object" ref="157080717"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="279110831"/>
-						</object>
-						<reference key="parent" ref="764218945"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">29</int>
 						<reference key="object" ref="917037209"/>
 						<object class="NSMutableArray" key="children">
@@ -531,8 +528,17 @@
 						<reference key="parent" ref="185871545"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">38</int>
-						<reference key="object" ref="279110831"/>
+						<int key="objectID">30</int>
+						<reference key="object" ref="157080717"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="84989064"/>
+						</object>
+						<reference key="parent" ref="764218945"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">44</int>
+						<reference key="object" ref="84989064"/>
 						<reference key="parent" ref="157080717"/>
 					</object>
 				</object>
@@ -560,8 +566,8 @@
 					<string>30.IBPluginDependency</string>
 					<string>33.IBPluginDependency</string>
 					<string>34.IBPluginDependency</string>
-					<string>38.CustomClassName</string>
-					<string>38.IBPluginDependency</string>
+					<string>44.CustomClassName</string>
+					<string>44.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
 				</object>
@@ -604,7 +610,7 @@
 				<reference key="dict.values" ref="1002"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">39</int>
+			<int key="maxID">48</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -627,7 +633,7 @@
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">PetsDocumentController</string>
-					<string key="superclassName">NSWindowController</string>
+					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">

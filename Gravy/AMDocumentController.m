@@ -44,10 +44,13 @@
 //        
 //        [documentController loadWindow];
         
-        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithWindowNibName:@"Pets" withGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
         
-        [petsDocController loadWindow];
-
+//        [[NSBundle mainBundle] loadNibFile:@"Pets" externalNameTable:[NSDictionary dictionary] withZone:nil];
+        
+        
+        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
+//        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithWindowNibName:@"Pets" withGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
+        
     }
     
 }

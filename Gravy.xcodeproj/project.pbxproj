@@ -530,8 +530,6 @@
 		E281AAD21470667300F35708 = {
 			isa = PBXGroup;
 			children = (
-				E2A711CD147083A900347704 /* libz.dylib */,
-				E2A70E3E1470737B00347704 /* AudioToolbox.framework */,
 				E281AAE71470667300F35708 /* Gravy */,
 				E281AB041470667300F35708 /* GravyTests */,
 				E2A70F111470814E00347704 /* Cocos2D */,
@@ -553,6 +551,8 @@
 		E281AAE01470667300F35708 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2A711CD147083A900347704 /* libz.dylib */,
+				E2A70E3E1470737B00347704 /* AudioToolbox.framework */,
 				E281AAE11470667300F35708 /* Cocoa.framework */,
 				E281AAFF1470667300F35708 /* SenTestingKit.framework */,
 				E281AAE31470667300F35708 /* Other Frameworks */,
@@ -1431,6 +1431,8 @@
 		E281AB101470667300F35708 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
 				INFOPLIST_FILE = "Gravy/Gravy-Info.plist";
@@ -1447,6 +1449,8 @@
 		E281AB111470667300F35708 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gravy/Gravy-Prefix.pch";
 				INFOPLIST_FILE = "Gravy/Gravy-Info.plist";
