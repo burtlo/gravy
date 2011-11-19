@@ -9,6 +9,8 @@
 #import "PetsDocumentController.h"
 #import "cocos2d.h"
 #import "PetsAnimationLayer.h"
+#import "Pet.h"
+#import "GuestRoomView.h"
 
 #define kPetAnimationView 2
 
@@ -23,21 +25,21 @@
 
 @synthesize window, animationView;
 
-@synthesize gameObjects, pets;
+@synthesize gameObjects, pets, baseResourcesURL;
 
-- (id)initWithGameObjects:(GameObjects *)aGameObjects {
+- (id)initWithGameObjects:(GameObjects *)aGameObjects rootResourcesFolder:(NSURL *)resourcesURL {
     
     self = [super init];
     
     if ( self ) {
     
         [self setGameObjects:aGameObjects];
+        [self setBaseResourcesURL:resourcesURL];
+        
         
         [NSBundle loadNibNamed:@"Pets" owner:self];
         
         [self prepareAnimationView];
-     
-        
     }
     
     return self;
@@ -45,7 +47,17 @@
 }
 
 - (NSMutableArray *)pets {
-    return [[self gameObjects] pets];
+    
+    NSMutableArray *guestRoomViews = [NSMutableArray array];
+    
+    for (Pet *pet in [gameObjects pets]) {
+        GuestRoomView *guestRoomView = [[GuestRoomView alloc] initWithPet:pet rootResourcesFolder:[self baseResourcesURL]];
+        [guestRoomView imageIcon];
+        [guestRoomViews addObject:guestRoomView];
+    }
+    
+    return guestRoomViews;
+//    return [[self gameObjects] pets];
 }
 
 - (void)prepareAnimationView {

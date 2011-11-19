@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E267075314774321008D5C3E /* anthome_2x1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E267075214774321008D5C3E /* anthome_2x1_1.png */; };
+		E267075A1477475B008D5C3E /* GuestRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26707591477475B008D5C3E /* GuestRoomView.m */; };
 		E281AAE21470667300F35708 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E281AAE11470667300F35708 /* Cocoa.framework */; };
 		E281AAEC1470667300F35708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E281AAEA1470667300F35708 /* InfoPlist.strings */; };
 		E281AAEE1470667300F35708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AAED1470667300F35708 /* main.m */; };
@@ -247,6 +248,8 @@
 
 /* Begin PBXFileReference section */
 		E267075214774321008D5C3E /* anthome_2x1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anthome_2x1_1.png; sourceTree = "<group>"; };
+		E26707581477475B008D5C3E /* GuestRoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestRoomView.h; sourceTree = "<group>"; };
+		E26707591477475B008D5C3E /* GuestRoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestRoomView.m; sourceTree = "<group>"; };
 		E281AADD1470667300F35708 /* Gravy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gravy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E281AAE11470667300F35708 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E281AAE41470667300F35708 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -680,6 +683,8 @@
 				E281AB471470683F00F35708 /* PetsDocumentController.h */,
 				E281AB481470683F00F35708 /* PetsDocumentController.m */,
 				E281AB461470683F00F35708 /* Pets.xib */,
+				E26707581477475B008D5C3E /* GuestRoomView.h */,
+				E26707591477475B008D5C3E /* GuestRoomView.m */,
 				E2A70F0414707B6800347704 /* PetsAnimationLayer.h */,
 				E2A70F0514707B6800347704 /* PetsAnimationLayer.m */,
 			);
@@ -1236,6 +1241,7 @@
 				E281AB501470689000F35708 /* CSVParser.m in Sources */,
 				E281AB551470689B00F35708 /* DocumentController.m in Sources */,
 				E2A70F0614707B6800347704 /* PetsAnimationLayer.m in Sources */,
+				E267075A1477475B008D5C3E /* GuestRoomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

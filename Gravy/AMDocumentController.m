@@ -48,8 +48,8 @@
 //        [[NSBundle mainBundle] loadNibFile:@"Pets" externalNameTable:[NSDictionary dictionary] withZone:nil];
         
         
-        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
-//        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithWindowNibName:@"Pets" withGameObjects:[self gameObjectsFromBaseFolder:baseFolder]];
+        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithGameObjects:[self gameObjectsFromBaseFolder:baseFolder] 
+                                                                                    rootResourcesFolder:baseFolder];
         
     }
     
@@ -58,7 +58,7 @@
 
 - (NSURL *)urlForCSVFileWithName:(NSString *)fileName withBase:(NSURL *)base {
     
-    NSURL *csvFilePath = [NSURL URLWithString:[NSString stringWithFormat:@"%@.csv",fileName] relativeToURL:base];
+    NSURL *csvFilePath = [NSURL URLWithString:[NSString stringWithFormat:@"Parameters/%@.csv",fileName] relativeToURL:base];
     
     return csvFilePath;
 }

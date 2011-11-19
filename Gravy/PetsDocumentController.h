@@ -12,13 +12,15 @@
 
 @interface PetsDocumentController : NSObject
 
-- (id)initWithGameObjects:(GameObjects *)aGameObjects;
-//- (id)initWithWindowNibName:(NSString *)windowNibName withGameObjects:(GameObjects *)aGameObjects;
+- (id)initWithGameObjects:(GameObjects *)aGameObjects rootResourcesFolder:(NSURL *)resourcesURL;
 
 @property (nonatomic,assign) IBOutlet NSWindow *window;
+
 @property (nonatomic,assign) IBOutlet GameObjects *gameObjects;
+@property (nonatomic,retain) IBOutlet MacGLView *animationView;
+
 @property (nonatomic,assign) IBOutlet NSMutableArray *pets;
 
-@property (nonatomic,retain) IBOutlet MacGLView *animationView;
+@property (nonatomic,assign) NSURL *baseResourcesURL;
 
 @end
