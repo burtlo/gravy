@@ -43,6 +43,12 @@
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
+        
+        
+        CCSprite *sprite = [CCSprite spriteWithFile:@"anthome_2x1_1.png"];
+        [sprite setPosition:ccp( size.width/2, size.height/2)];
+        [self addChild:sprite];
+        
 	}
 	return self;
     
