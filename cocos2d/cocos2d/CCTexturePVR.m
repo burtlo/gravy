@@ -193,16 +193,18 @@ typedef struct _PVRTexHeader
 		return FALSE;
 	}
 	
-	CCConfiguration *configuration = [CCConfiguration sharedConfiguration];
+    // This is disabled in PG version of Cocos2d
+//	CCConfiguration *configuration = [CCConfiguration sharedConfiguration];
 
 	flags = CFSwapInt32LittleToHost(header->flags);
 	formatFlags = flags & PVR_TEXTURE_FLAG_TYPE_MASK;
 	BOOL flipped = flags & kPVRTextureFlagVerticalFlip;
 	if( flipped )
 		CCLOG(@"cocos2d: WARNING: Image is flipped. Regenerate it using PVRTexTool");
-	
-	if( ! [configuration supportsNPOT] &&
-	   ( header->width != ccNextPOT(header->width) || header->height != ccNextPOT(header->height ) ) ) {
+
+    // This is disabled in PG version of Cocos2d
+//	if( ! [configuration supportsNPOT] &&
+    if ( ( header->width != ccNextPOT(header->width) || header->height != ccNextPOT(header->height ) ) ) {
 		CCLOG(@"cocos2d: ERROR: Loding an NPOT texture (%dx%d) but is not supported on this device", header->width, header->height);
 		return FALSE;
 	}

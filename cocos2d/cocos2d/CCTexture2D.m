@@ -117,9 +117,15 @@ static CCTexture2DPixelFormat defaultAlphaPixelFormat_ = kCCTexture2DPixelFormat
 		glBindTexture(GL_TEXTURE_2D, name_);
 
 		[self setAntiAliasTexParameters];
+
+#if CC_TEXTURE_NPOT_SUPPORT
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+#endif
 		
 		// Specify OpenGL texture image
 		
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+        
 		switch(pixelFormat)
 		{
 			case kCCTexture2DPixelFormat_RGBA8888:

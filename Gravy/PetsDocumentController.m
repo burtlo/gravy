@@ -76,6 +76,8 @@
 	// Use kCCDirectorResize_NoScale if you don't want auto-scaling.
     [director setResizeMode:kCCDirectorResize_AutoScale];
 
+    [CCTexture2D setDefaultAlphaPixelFormat:kTexture2DPixelFormat_RGBA8888];
+    
     // 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
