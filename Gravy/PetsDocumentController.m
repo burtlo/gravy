@@ -75,8 +75,17 @@
 	// 'Effects' don't work correctly when autoscale is turned on.
 	// Use kCCDirectorResize_NoScale if you don't want auto-scaling.
     [director setResizeMode:kCCDirectorResize_AutoScale];
+
+    // 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// 'layer' is an autorelease object.
+	petAnimationLayer = [PetsAnimationLayer node];
+	
+	// add layer as a child to scene
+	[scene addChild: petAnimationLayer];
     
-    [director runWithScene:[PetsAnimationLayer scene]];
+    [director runWithScene:scene];
 }
 
 #pragma mark - Observation
@@ -87,6 +96,22 @@
                        context:(void *)context {
     
     NSLog(@"Array Controller changed index to %@",[arrayController selectedObjects]);
+    
+    if ( [[arrayController selectedObjects] count] > 0 ) {
+        
+        GuestRoomView *guestRoomView = [[arrayController selectedObjects] objectAtIndex:0];
+        
+        [petAnimationLayer removeAllChildrenWithCleanup:YES];
+        
+        CCSprite *constructionImage = [guestRoomView spriteForLevel2Construction];
+        
+        if (constructionImage) {
+            [petAnimationLayer addChild:constructionImage z:1];
+        }
+        
+    }
+    
+    
 
 }
 

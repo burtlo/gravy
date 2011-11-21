@@ -9,8 +9,11 @@
 #import <Cocoa/Cocoa.h>
 #import "GameObjects.h"
 #import "cocos2d.h"
+#import "PetsAnimationLayer.h"
 
-@interface PetsDocumentController : NSObject
+@interface PetsDocumentController : NSObject {
+    PetsAnimationLayer *petAnimationLayer;
+}
 
 - (id)initWithGameObjects:(GameObjects *)aGameObjects rootResourcesFolder:(NSURL *)resourcesURL;
 

@@ -62,6 +62,46 @@
 
 - (CCSprite *)spriteForLevel2Construction {
     
+    NSDirectoryEnumerator *de = [[NSFileManager defaultManager] enumeratorAtURL:baseResourcesURL 
+                                                     includingPropertiesForKeys:nil
+                                                                        options:NSDirectoryEnumerationSkipsHiddenFiles | NSDirectoryEnumerationSkipsPackageDescendants
+                                                                   errorHandler:^BOOL(NSURL *url, NSError *error) {
+                                                                       
+                                                                       NSLog(@"Error finding files");
+                                                                       return YES;
+                                                                       
+                                                                   }];
+    
+    NSURL *file;
+    
+    while ((file = [de nextObject])) {
+        //NSLog(@"Looking at %@",file);
+        
+        if ( [[file absoluteString] hasSuffix:[[pet room] level2Filename]] ) {
+            
+            NSString *localFilename = [[file absoluteString] substringFromIndex:[@"file://localhost" length]];
+            
+            NSLog(@"Found image at %@",localFilename);
+            
+            CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:localFilename];
+            
+            CCSprite *sprite = nil;
+            
+            if ( texture ) {
+                sprite = [CCSprite spriteWithTexture:texture rect:CGRectMake(0.0, 0.0, 100.0, 100.0)];
+            }
+//            CCSprite *sprite = [CCSprite spriteWithFile:localFilename];
+            
+            [sprite setScaleX:1.0];
+            [sprite setScaleY:1.0];
+            
+            [sprite setContentSize:CGSizeMake(100.00, 100.0)];
+            
+            return sprite;
+        }
+    }
+    
+    return nil;
 }
 
 
