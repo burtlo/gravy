@@ -9,7 +9,7 @@
 #import "AMDocumentController.h"
 #import "Achievements.h"
 #import "GVAppDelegate.h"
-#import "DocumentController.h"
+#import "AchievementsDocumentController.h"
 #import "GameObjects.h"
 #import "PetsDocumentController.h"
 
@@ -39,11 +39,11 @@
         
         NSURL *baseFolder = [[openPanel URLs] objectAtIndex:0];
         
-//        DocumentController *documentController = [[DocumentController alloc] initWithWindowNibName:@"Document" 
-//                                                                              withAchievementsData:[self achievementsFromBaseFolder:baseFolder]];
-//        
-//        [documentController loadWindow];
         
+        [[NSBundle mainBundle] loadNibFile:@"Achievements" externalNameTable:[NSDictionary dictionary] withZone:nil];
+        
+        AchievementsDocumentController *achievementDocController = [[AchievementsDocumentController alloc] initWithAchievements:[self achievementsFromBaseFolder:baseFolder] 
+                                                                              rootResourcesFolder:baseFolder];
         
 //        [[NSBundle mainBundle] loadNibFile:@"Pets" externalNameTable:[NSDictionary dictionary] withZone:nil];
         
