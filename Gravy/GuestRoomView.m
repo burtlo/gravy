@@ -61,7 +61,7 @@
 }
 
 - (CCSprite *)spriteForLevel2Construction {
-    
+   return [CCSprite node]; 
 }
 
 
