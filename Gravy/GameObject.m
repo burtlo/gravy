@@ -25,4 +25,8 @@
 
 @synthesize level2Filename, level2PNGColorSpace, level2BuildCost, level2BuildUnit, level2BuildTime, level2BuildXP, level2EarnTime, level2EarnUnit, level2EarnAmount, level2EarnXP;
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    DLOG(@"Attempting to set a property that we currently do not maintain: %@",key);
+}
+
 @end

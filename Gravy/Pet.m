@@ -17,4 +17,8 @@
 @synthesize cafA, disco, karaoke;
 @synthesize flight;
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    DLOG(@"Attempting to set a property that we currently do not maintain: %@",key);
+}
+
 @end
