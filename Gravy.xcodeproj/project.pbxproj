@@ -29,8 +29,8 @@
 		E281AB491470683F00F35708 /* Pets.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AB461470683F00F35708 /* Pets.xib */; };
 		E281AB4A1470683F00F35708 /* PetsDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB481470683F00F35708 /* PetsDocumentController.m */; };
 		E281AB501470689000F35708 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB4F1470689000F35708 /* CSVParser.m */; };
-		E281AB541470689B00F35708 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AB511470689B00F35708 /* Document.xib */; };
-		E281AB551470689B00F35708 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB531470689B00F35708 /* DocumentController.m */; };
+		E281AB541470689B00F35708 /* Achievements.xib in Resources */ = {isa = PBXBuildFile; fileRef = E281AB511470689B00F35708 /* Achievements.xib */; };
+		E281AB551470689B00F35708 /* AchievementsDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281AB531470689B00F35708 /* AchievementsDocumentController.m */; };
 		E281AB5B1470690300F35708 /* Achievements.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB571470690300F35708 /* Achievements.csv */; };
 		E281AB5C1470690300F35708 /* AchievementsRequirements.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB581470690300F35708 /* AchievementsRequirements.csv */; };
 		E281AB5D1470690300F35708 /* GameObjectTypes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E281AB591470690300F35708 /* GameObjectTypes.csv */; };
@@ -288,9 +288,9 @@
 		E281AB481470683F00F35708 /* PetsDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetsDocumentController.m; sourceTree = "<group>"; };
 		E281AB4E1470689000F35708 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
 		E281AB4F1470689000F35708 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
-		E281AB511470689B00F35708 /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
-		E281AB521470689B00F35708 /* DocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
-		E281AB531470689B00F35708 /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
+		E281AB511470689B00F35708 /* Achievements.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Achievements.xib; sourceTree = "<group>"; };
+		E281AB521470689B00F35708 /* AchievementsDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementsDocumentController.h; sourceTree = "<group>"; };
+		E281AB531470689B00F35708 /* AchievementsDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsDocumentController.m; sourceTree = "<group>"; };
 		E281AB571470690300F35708 /* Achievements.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Achievements.csv; sourceTree = "<group>"; };
 		E281AB581470690300F35708 /* AchievementsRequirements.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AchievementsRequirements.csv; sourceTree = "<group>"; };
 		E281AB591470690300F35708 /* GameObjectTypes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameObjectTypes.csv; sourceTree = "<group>"; };
@@ -694,9 +694,9 @@
 		E281AB561470689E00F35708 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
-				E281AB511470689B00F35708 /* Document.xib */,
-				E281AB521470689B00F35708 /* DocumentController.h */,
-				E281AB531470689B00F35708 /* DocumentController.m */,
+				E281AB511470689B00F35708 /* Achievements.xib */,
+				E281AB521470689B00F35708 /* AchievementsDocumentController.h */,
+				E281AB531470689B00F35708 /* AchievementsDocumentController.m */,
 			);
 			name = Achievements;
 			sourceTree = "<group>";
@@ -1185,7 +1185,7 @@
 				E281AAF21470667300F35708 /* Credits.rtf in Resources */,
 				E281AAF81470667300F35708 /* MainMenu.xib in Resources */,
 				E281AB491470683F00F35708 /* Pets.xib in Resources */,
-				E281AB541470689B00F35708 /* Document.xib in Resources */,
+				E281AB541470689B00F35708 /* Achievements.xib in Resources */,
 				E2A70F0914707D7000347704 /* fps_images.png in Resources */,
 				E2A70F0A14707D7000347704 /* icon.icns in Resources */,
 				E267075314774321008D5C3E /* anthome_2x1_1.png in Resources */,
@@ -1239,7 +1239,7 @@
 				E281AB451470683400F35708 /* Pet.m in Sources */,
 				E281AB4A1470683F00F35708 /* PetsDocumentController.m in Sources */,
 				E281AB501470689000F35708 /* CSVParser.m in Sources */,
-				E281AB551470689B00F35708 /* DocumentController.m in Sources */,
+				E281AB551470689B00F35708 /* AchievementsDocumentController.m in Sources */,
 				E2A70F0614707B6800347704 /* PetsAnimationLayer.m in Sources */,
 				E267075A1477475B008D5C3E /* GuestRoomView.m in Sources */,
 			);
