@@ -19,6 +19,8 @@
     if (self) {
         [self setAchievementsData:_achievements];
         [self setBaseResourcesURL:resourcesURL];
+        
+        [NSBundle loadNibNamed:@"Achievements" owner:self];
     }
     return self;
 }
