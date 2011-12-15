@@ -23,6 +23,6 @@
 @property (assign) IBOutlet NSArrayController *arrayController;
 @property (nonatomic,assign) IBOutlet NSMutableArray *pets;
 
-@property (nonatomic,assign) NSURL *baseResourcesURL;
+@property (nonatomic,retain) NSURL *baseResourcesURL;
 
 @end
