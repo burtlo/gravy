@@ -36,10 +36,9 @@
 //invisible to the user, as these achievements are only used internally for pre-req
 @property (nonatomic,readwrite,assign) id invisible;
 
+- (void)addRequirement:(AchievementRequirement *)requirement;
 
 @property (nonatomic,readwrite,retain) NSMutableArray *requirements;
-
-- (void)addRequirement:(AchievementRequirement *)requirement;
 
 @property (nonatomic,readwrite,retain) NSMutableArray *isPrerequisitesFor;
 

@@ -19,6 +19,8 @@
 - (Achievements *)achievementsFromBaseFolder:(NSURL *)baseFolder;
 - (GameObjects *)gameObjectsFromBaseFolder:(NSURL *)baseFolder;
 
+- (NSMutableDictionary *)dictionaryWithRelativePathKeyToFullURLFromBaseFolder:(NSURL *)baseFolder;
+
 @end
 
 @implementation AMDocumentController
@@ -39,17 +41,15 @@
         
         NSURL *baseFolder = [[openPanel URLs] objectAtIndex:0];
         
+        NSMutableDictionary *assetDictionary = [self dictionaryWithRelativePathKeyToFullURLFromBaseFolder:baseFolder];
         
-        [[NSBundle mainBundle] loadNibFile:@"Achievements" externalNameTable:[NSDictionary dictionary] withZone:nil];
+        Achievements *achievements = [self achievementsFromBaseFolder:baseFolder];
         
-        AchievementsDocumentController *achievementDocController = [[AchievementsDocumentController alloc] initWithAchievements:[self achievementsFromBaseFolder:baseFolder] 
-                                                                              rootResourcesFolder:baseFolder];
+        AchievementsDocumentController *achievementDocController = [[AchievementsDocumentController alloc] initWithAchievements:achievements
+                                                                              assetDictionary:assetDictionary];
         
-//        [[NSBundle mainBundle] loadNibFile:@"Pets" externalNameTable:[NSDictionary dictionary] withZone:nil];
-        
-        
-        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithGameObjects:[self gameObjectsFromBaseFolder:baseFolder] 
-                                                                                    rootResourcesFolder:baseFolder];
+//        PetsDocumentController *petsDocController = [[PetsDocumentController alloc] initWithGameObjects:[self gameObjectsFromBaseFolder:baseFolder] 
+//                                                                                    rootResourcesFolder:baseFolder];
         
     }
     
@@ -84,6 +84,40 @@
                                                                     andPetsFile:[petsFile path]];
     
     return gameObjectsData;
+    
+}
+
+#pragma mark - Image Assets
+
+- (NSMutableDictionary *)dictionaryWithRelativePathKeyToFullURLFromBaseFolder:(NSURL *)baseFolder {
+    
+    NSMutableDictionary *imageDictionary = [NSMutableDictionary dictionary];
+    
+    NSDirectoryEnumerator *de = [[NSFileManager defaultManager] enumeratorAtURL:baseFolder
+                                                     includingPropertiesForKeys:nil
+                                                                        options:NSDirectoryEnumerationSkipsHiddenFiles | NSDirectoryEnumerationSkipsPackageDescendants
+                                                                   errorHandler:^BOOL(NSURL *url, NSError *error) {
+                                                                       
+                                                                       NSLog(@"Error finding files");
+                                                                       return YES;
+                                                                       
+                                                                   }];
+    
+    NSURL *fileURL;
+    
+    while ((fileURL = [de nextObject])) {
+//        NSLog(@"Looking at %@",fileURL);
+        
+        if ( [[fileURL absoluteString] hasSuffix:@"png"] ) {
+            
+//            NSLog(@"Found image at %@",[fileURL absoluteString]);
+            
+            [imageDictionary setObject:fileURL forKey:[[fileURL absoluteString] lastPathComponent]];
+            
+        }
+    }
+    
+    return imageDictionary;
     
 }
 

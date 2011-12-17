@@ -47,7 +47,4 @@
 // The category name for this achievement
 @property (nonatomic,readwrite,retain) NSString *category;
 
-
-@property (nonatomic,readwrite,retain) NSImage *icon;
-
 @end

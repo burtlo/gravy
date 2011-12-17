@@ -12,9 +12,10 @@
 @interface AchievementsDocumentController : NSObject {
     Achievements *achievementsData;
     NSInteger achievementRepresentation;
+    NSDictionary *assetDictionary;
 }
 
-- (id)initWithAchievements:(Achievements *)achievements rootResourcesFolder:(NSURL *)resourcesURL;
+- (id)initWithAchievements:(Achievements *)achievements assetDictionary:(NSDictionary *)assetDictionary;
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic,assign) IBOutlet NSMutableArray *achievements;
@@ -23,8 +24,5 @@
 
 @property (nonatomic,retain) Achievements *achievementsData;
 @property (nonatomic,retain) NSURL *baseResourcesURL;
-
--(void)insertObject:(id)object inAchievementsAtIndex:(NSUInteger)index;
--(void)removeObjectFromAchievementsAtIndex:(NSUInteger)index;
 
 @end

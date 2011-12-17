@@ -56,7 +56,7 @@
     NSMutableArray *guestRoomViews = [NSMutableArray array];
     
     for (Pet *pet in [gameObjects pets]) {
-        GuestRoomView *guestRoomView = [[GuestRoomView alloc] initWithPet:pet rootResourcesFolder:[self baseResourcesURL]];
+        GuestRoomView *guestRoomView = [[[GuestRoomView alloc] initWithPet:pet rootResourcesFolder:[self baseResourcesURL]] autorelease];
         [guestRoomView imageIcon];
         [guestRoomViews addObject:guestRoomView];
     }

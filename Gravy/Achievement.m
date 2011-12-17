@@ -65,7 +65,9 @@
 @synthesize isPrerequisitesFor;
 
 - (NSMutableArray *)isPrerequisitesFor {
-    if (isPrerequisitesFor == nil) { isPrerequisitesFor = [NSMutableArray array]; }
+    if (isPrerequisitesFor == nil) { 
+        isPrerequisitesFor = [NSMutableArray array]; 
+    }
     return isPrerequisitesFor;
 }
 

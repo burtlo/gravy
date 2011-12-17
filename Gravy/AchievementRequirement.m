@@ -41,10 +41,4 @@
 
 @synthesize category;
 
-@synthesize icon;
-
-- (NSImage *)icon {
-    return [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:@"requirement.png"]];
-}
-
 @end
